@@ -592,21 +592,29 @@ export default function SafetizenLanding() {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <h2 className="text-2xl font-semibold">VR Safety Module Library</h2>
 
-          <div className="flex flex-col gap-3 w-full sm:flex-row sm:flex-wrap md:justify-end">
+        <div className="flex flex-col gap-3 w-full sm:flex-row sm:flex-wrap md:justify-end">
             <input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search modules..."
-              className="px-3 py-2 border rounded-md bg-white/50 w-full sm:w-48"
+              className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 placeholder-slate-400 dark:bg-slate-800 dark:text-slate-100 dark:placeholder-slate-500 w-full sm:w-48"
             />
 
-            <select value={languageFilter} onChange={(e) => setLanguageFilter(e.target.value)} className="px-3 py-2 border rounded-md bg-white/50 w-full sm:w-auto">
+            <select
+              value={languageFilter}
+              onChange={(e) => setLanguageFilter(e.target.value)}
+              className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100 w-full sm:w-auto"
+            >
               {languages.map((l) => (
                 <option key={l} value={l}>{l}</option>
               ))}
             </select>
 
-            <select value={runtimeFilter} onChange={(e) => setRuntimeFilter(e.target.value)} className="px-3 py-2 border rounded-md bg-white/50 w-full sm:w-auto">
+            <select
+              value={runtimeFilter}
+              onChange={(e) => setRuntimeFilter(e.target.value)}
+              className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100 w-full sm:w-auto"
+            >
               <option value="All">All runtimes</option>
               <option value="<=10">≤ 10 mins</option>
               <option value=">10">{"> 10 mins"}</option>
