@@ -411,6 +411,7 @@ export default function SafetizenLanding() {
   const [search, setSearch] = useState("");
   const [languageFilter, setLanguageFilter] = useState("All");
   const [runtimeFilter, setRuntimeFilter] = useState("All");
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const languages = useMemo(() => {
     const s = new Set();
@@ -436,7 +437,7 @@ export default function SafetizenLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
       {/* NAV */}
-      <header className="max-w-7xl mx-auto p-6 flex items-center justify-between">
+      <header className="max-w-7xl mx-auto p-6 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold">A</div>
           <div>
@@ -449,12 +450,33 @@ export default function SafetizenLanding() {
           <a href="#summary" className="hover:underline">Summary</a>
           <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-3 py-1.5 bg-indigo-600 text-white rounded">Request Demo</a>
         </nav>
+        <button
+          className="md:hidden inline-flex flex-col justify-center items-center w-11 h-11 border border-slate-200 rounded-lg"
+          onClick={() => setMobileNavOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
+        >
+          <span className="w-5 h-0.5 bg-slate-800 mb-1" />
+          <span className="w-5 h-0.5 bg-slate-800 mb-1" />
+          <span className="w-5 h-0.5 bg-slate-800" />
+        </button>
       </header>
+      {mobileNavOpen && (
+        <div className="md:hidden px-6">
+          <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-4 flex flex-col gap-2 text-sm text-slate-600">
+            <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-1">Modules</a>
+            <a href="#summary" onClick={() => setMobileNavOpen(false)} className="py-1">Summary</a>
+            <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-1">Explore Modules</a>
+            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center justify-center px-3 py-2 bg-indigo-600 text-white rounded">
+              Request Demo
+            </a>
+          </div>
+        </div>
+      )}
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
-          <h1 className="text-4xl font-extrabold leading-tight">Immersive VR Safety Training Library for Enterprises</h1>
+           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">Immersive VR Safety Training Library for Enterprises</h1>
           <p className="mt-4 text-slate-600 dark:text-slate-300">Ready-to-deploy, multilingual VR safety modules designed for Manufacturing, Infrastructure & Corporate environments — built for measurable competency.</p>
 
           <div className="mt-6 flex gap-3">
@@ -462,7 +484,7 @@ export default function SafetizenLanding() {
             <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 border rounded-lg">Request Demo</a>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-slate-600">
+           <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-slate-600">
             <div className="bg-white/60 dark:bg-slate-800/60 rounded p-3 text-center shadow-sm">
               <div className="text-2xl font-bold">21+</div>
               <div className="text-xs">Ready Modules</div>
@@ -519,24 +541,24 @@ export default function SafetizenLanding() {
 
       {/* MODULES */}
       <section id="modules" className="max-w-7xl mx-auto px-6 py-8">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <h2 className="text-2xl font-semibold">VR Safety Module Library</h2>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col gap-3 w-full sm:flex-row sm:flex-wrap md:justify-end">
             <input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search modules..."
-              className="px-3 py-2 border rounded-md bg-white/50"
+              className="px-3 py-2 border rounded-md bg-white/50 w-full sm:w-48"
             />
 
-            <select value={languageFilter} onChange={(e) => setLanguageFilter(e.target.value)} className="px-3 py-2 border rounded-md bg-white/50">
+            <select value={languageFilter} onChange={(e) => setLanguageFilter(e.target.value)} className="px-3 py-2 border rounded-md bg-white/50 w-full sm:w-auto">
               {languages.map((l) => (
                 <option key={l} value={l}>{l}</option>
               ))}
             </select>
 
-            <select value={runtimeFilter} onChange={(e) => setRuntimeFilter(e.target.value)} className="px-3 py-2 border rounded-md bg-white/50">
+            <select value={runtimeFilter} onChange={(e) => setRuntimeFilter(e.target.value)} className="px-3 py-2 border rounded-md bg-white/50 w-full sm:w-auto">
               <option value="All">All runtimes</option>
               <option value="<=10">≤ 10 mins</option>
               <option value=">10">{"> 10 mins"}</option>
@@ -545,7 +567,7 @@ export default function SafetizenLanding() {
         </div>
 
         <div className="mt-4">
-          <div className="flex gap-3 items-center">
+          <div className="flex flex-wrap gap-3 items-center">
             {CATEGORIES.map((c) => (
               <button
                 key={c}
@@ -596,9 +618,9 @@ export default function SafetizenLanding() {
         <div className="bg-indigo-600 text-white rounded-lg p-10 shadow-lg">
           <h3 className="text-2xl font-semibold">Digitize Your Workplace Safety Training Today</h3>
           <p className="mt-2">Deploy VR training across your team and begin measurable assessments in days.</p>
-          <div className="mt-6 flex items-center justify-center gap-4">
-            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-6 py-3 bg-white text-indigo-600 rounded font-semibold">Book a Live VR Demo</a>
-            <a href="#modules" className="px-6 py-3 border rounded text-white/90">Explore Modules</a>
+           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+             <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-6 py-3 bg-white text-indigo-600 rounded font-semibold text-center">Book a Live VR Demo</a>
+             <a href="#modules" className="w-full sm:w-auto px-6 py-3 border rounded text-white/90 text-center">Explore Modules</a>
           </div>
         </div>
       </section>
