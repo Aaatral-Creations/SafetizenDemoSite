@@ -380,7 +380,21 @@ function ModuleCard({ m, onDetails }) {
       </div>
 
       <div className="mt-3 flex items-center gap-2">
-        {/* Watch button intentionally hidden for now */}
+        {m.video ? (
+          <a
+            href={m.video}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-3 py-1.5 bg-indigo-600 text-white rounded text-sm"
+          >
+            ▶ Watch
+          </a>
+        ) : (
+          <button className="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-200 text-slate-700 rounded text-sm" disabled>
+            No Preview
+          </button>
+        )}
+
         <button onClick={() => onDetails(m)} className="ml-auto inline-flex items-center gap-2 px-3 py-1.5 border rounded text-sm">Details</button>
       </div>
     </div>
