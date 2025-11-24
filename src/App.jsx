@@ -603,9 +603,18 @@ export default function SafetizenLanding() {
       <section className="max-w-7xl mx-auto px-6 py-8">
         <h2 className="text-2xl font-semibold">Why Enterprises Choose Safetizen</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Real-world Risk Replication</h3><p className="text-sm text-slate-500 mt-2">High fidelity scenarios mapped to Life Saving Rules and industry risk.</p></div>
-          <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Assessment & Benchmarking</h3><p className="text-sm text-slate-500 mt-2">Guided, quiz and assessment modes provide measurable competency scores.</p></div>
-          <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Hardware Integration</h3><p className="text-sm text-slate-500 mt-2">Seamless hardware integrations for advanced simulators and peripherals.</p></div>
+          <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
+            <h3 className="font-semibold text-slate-900 dark:text-white">Real-world Risk Replication</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">High fidelity scenarios mapped to Life Saving Rules and industry risk.</p>
+          </div>
+          <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
+            <h3 className="font-semibold text-slate-900 dark:text-white">Assessment & Benchmarking</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Guided, quiz and assessment modes provide measurable competency scores.</p>
+          </div>
+          <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
+            <h3 className="font-semibold text-slate-900 dark:text-white">Hardware Integration</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Seamless hardware integrations for advanced simulators and peripherals.</p>
+          </div>
         </div>
       </section>
 
@@ -613,9 +622,18 @@ export default function SafetizenLanding() {
       <section id="roadmap" className="max-w-7xl mx-auto px-6 py-8">
         <h2 className="text-2xl font-semibold">Roadmap (Upcoming)</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Chemical Safety</h3><p className="text-sm text-slate-500 mt-2">December 2025</p></div>
-          <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Material Handling</h3><p className="text-sm text-slate-500 mt-2">December 2025</p></div>
-          <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Shop Floor Safety</h3><p className="text-sm text-slate-500 mt-2">December 2025</p></div>
+          <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
+            <h3 className="font-semibold text-slate-900 dark:text-white">Chemical Safety</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
+          </div>
+          <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
+            <h3 className="font-semibold text-slate-900 dark:text-white">Material Handling</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
+          </div>
+          <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
+            <h3 className="font-semibold text-slate-900 dark:text-white">Shop Floor Safety</h3>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
+          </div>
         </div>
       </section>
 
