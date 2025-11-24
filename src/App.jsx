@@ -318,6 +318,45 @@ const MODULES = [
     video: "https://www.youtube.com/watch?v=U1xeDRqj2oA",
     description: "End-to-end crane simulator with hook rigging, pendant commands, and emergency shutdown cues.",
     learningObjective: "Learners practice precise load positioning, avoid swing risks, and follow shutdown escalations."
+  },
+  {
+    id: 25,
+    name: "Cabin Crane - Slab & Hot Metal Handling",
+    category: "EOT Crane Simulator",
+    runtime: "20 mins",
+    languages: ["English", "Hindi"],
+    modes: { guided: true, quiz: true, assessment: true },
+    industries: ["Manufacturing"],
+    devices: ["Meta Quest 3", "Meta Quest 3S"],
+    video: "https://www.youtube.com/watch?v=U1xeDRqj2oA",
+    description: "End-to-end crane simulator with hook rigging, pendant commands, and emergency shutdown cues.",
+    learningObjective: "Learners practice precise load positioning, avoid swing risks, and follow shutdown escalations."
+  },
+  {
+    id: 26,
+    name: "Cabin Crane - Billet Handling",
+    category: "EOT Crane Simulator",
+    runtime: "20 mins",
+    languages: ["English", "Hindi"],
+    modes: { guided: true, quiz: true, assessment: true },
+    industries: ["Manufacturing"],
+    devices: ["Meta Quest 3", "Meta Quest 3S"],
+    video: "https://www.youtube.com/watch?v=U1xeDRqj2oA",
+    description: "End-to-end crane simulator with hook rigging, pendant commands, and emergency shutdown cues.",
+    learningObjective: "Learners practice precise load positioning, avoid swing risks, and follow shutdown escalations."
+  },
+  {
+    id: 27,
+    name: "Cabin Crane - Coin Handling",
+    category: "EOT Crane Simulator",
+    runtime: "20 mins",
+    languages: ["English", "Hindi"],
+    modes: { guided: true, quiz: true, assessment: true },
+    industries: ["Manufacturing"],
+    devices: ["Meta Quest 3", "Meta Quest 3S"],
+    video: "https://www.youtube.com/watch?v=U1xeDRqj2oA",
+    description: "End-to-end crane simulator with hook rigging, pendant commands, and emergency shutdown cues.",
+    learningObjective: "Learners practice precise load positioning, avoid swing risks, and follow shutdown escalations."
   }
 ];
 
