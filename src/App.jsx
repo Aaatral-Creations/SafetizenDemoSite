@@ -604,7 +604,7 @@ export default function SafetizenLanding() {
       </section>
 
       {/* ROADMAP */}
-      <section className="max-w-7xl mx-auto px-6 py-8">
+      <section id="roadmap" className="max-w-7xl mx-auto px-6 py-8">
         <h2 className="text-2xl font-semibold">Roadmap (Upcoming)</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="p-4 bg-white rounded border"> <h3 className="font-semibold">Chemical Safety</h3><p className="text-sm text-slate-500 mt-2">December 2025</p></div>
@@ -648,9 +648,22 @@ export default function SafetizenLanding() {
           <div>
             <div className="font-semibold">Quick Links</div>
             <ul className="mt-2 text-sm text-slate-500 space-y-1">
-              <li>Modules</li>
-              <li>Demo</li>
-              <li>Roadmap</li>
+              <li>
+                <a href="#modules" className="hover:text-slate-800 transition">Modules</a>
+              </li>
+              <li>
+                <a
+                  href="https://aatral.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-slate-800 transition"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#roadmap" className="hover:text-slate-800 transition">Roadmap</a>
+              </li>
             </ul>
           </div>
         </div>
