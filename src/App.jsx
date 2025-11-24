@@ -413,7 +413,7 @@ export default function SafetizenLanding() {
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600">
           <a href="#modules" className="hover:underline">Modules</a>
           <a href="#summary" className="hover:underline">Summary</a>
-          <a href="#contact" className="px-3 py-1.5 bg-indigo-600 text-white rounded">Request Demo</a>
+          <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-3 py-1.5 bg-indigo-600 text-white rounded">Request Demo</a>
         </nav>
       </header>
 
