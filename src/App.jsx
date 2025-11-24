@@ -425,7 +425,7 @@ export default function SafetizenLanding() {
 
           <div className="mt-6 flex gap-3">
             <a href="#modules" className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg">View Modules</a>
-            <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 border rounded-lg">Request Demo</a>
+            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 border rounded-lg">Request Demo</a>
           </div>
 
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-slate-600">
@@ -563,7 +563,7 @@ export default function SafetizenLanding() {
           <h3 className="text-2xl font-semibold">Digitize Your Workplace Safety Training Today</h3>
           <p className="mt-2">Deploy VR training across your team and begin measurable assessments in days.</p>
           <div className="mt-6 flex items-center justify-center gap-4">
-            <a href="#contact" className="px-6 py-3 bg-white text-indigo-600 rounded font-semibold">Book a Live VR Demo</a>
+            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-6 py-3 bg-white text-indigo-600 rounded font-semibold">Book a Live VR Demo</a>
             <a href="#modules" className="px-6 py-3 border rounded text-white/90">Explore Modules</a>
           </div>
         </div>
