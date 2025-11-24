@@ -360,7 +360,10 @@ const MODULES = [
   }
 ];
 
-const CATEGORIES = ["All", "General Safety", "Killer Risks", "EOT Crane Simulator"];
+const EOT_CATEGORY = "EOT Crane Simulator";
+const GENERAL_MODULES = MODULES.filter((m) => m.category !== EOT_CATEGORY);
+const EOT_MODULES = MODULES.filter((m) => m.category === EOT_CATEGORY);
+const CATEGORIES = ["All", "General Safety", "Killer Risks"];
 const DEFAULT_YOUTUBE_EMBED = "https://www.youtube.com/embed/U1xeDRqj2oA";
 const SHOW_WATCH_BUTTON = false;
 const LOGO_URL = "https://aatral.io/assets/images/home/logo_full.svg";
@@ -455,12 +458,12 @@ export default function SafetizenLanding() {
 
   const languages = useMemo(() => {
     const s = new Set();
-    MODULES.forEach((m) => m.languages.forEach((l) => s.add(l)));
+    GENERAL_MODULES.forEach((m) => m.languages.forEach((l) => s.add(l)));
     return ["All", ...Array.from(s)];
   }, []);
 
   const filtered = useMemo(() => {
-    return MODULES.filter((m) => {
+    return GENERAL_MODULES.filter((m) => {
       if (activeCategory !== "All" && m.category !== activeCategory) return false;
       if (languageFilter !== "All" && !m.languages.includes(languageFilter)) return false;
       if (search && !m.name.toLowerCase().includes(search.toLowerCase())) return false;
@@ -637,6 +640,23 @@ export default function SafetizenLanding() {
           </div>
         </div>
       </section>
+
+      {EOT_MODULES.length > 0 && (
+        <section id="eot-crane" className="max-w-7xl mx-auto px-6 py-8">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold">EOT Crane Simulators</h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 max-w-3xl">
+              Dedicated cabin and pendant crane modules that replicate slab, billet, coin, and hot metal handling environments for steel plants and heavy manufacturing.
+            </p>
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {EOT_MODULES.map((m) => (
+              <ModuleCard key={m.id} m={m} onDetails={setSelected} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* DIFFERENTIATORS */}
       <section className="max-w-7xl mx-auto px-6 py-8">
