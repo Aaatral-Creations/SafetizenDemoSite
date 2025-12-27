@@ -626,6 +626,68 @@ function getYouTubeEmbedUrl(source) {
   return DEFAULT_YOUTUBE_EMBED;
 }
 
+function LogoCarousel() {
+  // Logo carousel with infinite scroll animation
+  //https://codepen.io/studiojvla/pen/qVbQqW
+  const logos = [
+    "/logos/lnt_construction.jpeg",
+    "/logos/amnsindia.jpeg",
+    "/logos/ashokleyland.jpeg",
+    "/logos/toyoto.jpeg",
+    "/logos/tatapower.jpeg",
+    "/logos/tataprojects.jpeg",
+    "/logos/ey.jpg",
+    "/logos/jsw.jpeg",
+    "/logos/iaf.jpeg",
+    "/logos/indianarmy.jpeg",
+    "/logos/indiannavy.jpeg",
+    "/logos/toyotoboshoku.jpg",
+    "/logos/coreehs.jpeg",
+    "/logos/forcetech.jpeg",
+    "/logos/hcc.png",
+    "/logos/itt.jpeg",
+    "/logos/jll.jpeg",
+    "/logos/kitious.jpeg",
+    "/logos/lnt-energy-hydrocarbon.jpg",
+    "/logos/lnt.jpeg",
+    "/logos/msp.jpeg",
+    "/logos/renfraenergy.jpeg",
+    "/logos/saildsp.jpeg",
+    "/logos/saintgobain.jpeg",
+    "/logos/tcs.jpg",
+    "/logos/titan.jpeg",
+    "/logos/acedesigners.jpeg",
+    "/logos/allison.jpeg",
+    "/logos/asp.jpg",
+    "/logos/tpcodl.jpeg",
+    "/logos/tpsodl.jpg"
+  ];
+
+  return (
+    <div className="relative w-full overflow-hidden bg-white dark:bg-slate-900 py-8">
+      {/* Gradient overlays for fade effect */}
+      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white dark:from-slate-900 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white dark:from-slate-900 to-transparent z-10 pointer-events-none" />
+
+      {/* Scrolling track */}
+      <div className="flex animate-scroll">
+        {/* First set of logos */}
+        {logos.map((logo, idx) => (
+          <div key={`logo-1-${idx}`} className="flex-shrink-0 w-64 px-4">
+            <img src={logo} alt={`Logo ${idx + 1}`} className="h-24 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+          </div>
+        ))}
+        {/* Duplicate set for infinite scroll */}
+        {logos.map((logo, idx) => (
+          <div key={`logo-2-${idx}`} className="flex-shrink-0 w-64 px-4">
+            <img src={logo} alt={`Logo ${idx + 1}`} className="h-24 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function ModeBadge({ modes }) {
   return (
     <div className="flex gap-2">
@@ -960,6 +1022,12 @@ export default function SafetizenLanding() {
             <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
           </div>
         </div>
+      </section>
+
+      {/* LOGO CAROUSEL */}
+      <section className="max-w-7xl mx-auto px-6 py-8">
+        <h2 className="text-2xl font-semibold text-center mb-6">Trusted By Industry Leaders</h2>
+        <LogoCarousel />
       </section>
 
       {/* CTA */}
