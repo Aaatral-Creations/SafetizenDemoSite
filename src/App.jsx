@@ -608,7 +608,7 @@ const HERO_STATS = [
 ];
 const DEFAULT_YOUTUBE_EMBED = "https://www.youtube.com/embed/U1xeDRqj2oA";
 const SHOW_WATCH_BUTTON = false;
-const LOGO_URL = "https://aatral.io/assets/images/home/logo_full.svg";
+const LOGO_URL = `${import.meta.env.BASE_URL}aatral-logo.png`;
 
 function getYouTubeEmbedUrl(source) {
   if (!source) return DEFAULT_YOUTUBE_EMBED;
@@ -1018,15 +1018,23 @@ export default function SafetizenLanding() {
       {/* NAV */}
       <header className="max-w-7xl mx-auto p-6 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
+          {/* Light mode logo */}
           <img
-            src={LOGO_URL}
+            src={`${import.meta.env.BASE_URL}aatral-logo.png`}
             alt="Aatral logo"
-            className="w-28 h-12 object-contain"
+            className="w-40 h-16 object-contain dark:hidden"
+            loading="lazy"
+          />
+          {/* Dark mode logo */}
+          <img
+            src={`${import.meta.env.BASE_URL}aatral-dark.png`}
+            alt="Aatral logo"
+            className="w-40 h-16 object-contain hidden dark:block"
             loading="lazy"
           />
           <div>
-            <div className="font-semibold">Safetizen</div>
-            <div className="text-xs text-slate-500">VR Safety Training Library</div>
+            <div className="font-semibold text-lg">Safetizen</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">VR Safety Training Library</div>
           </div>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600">
