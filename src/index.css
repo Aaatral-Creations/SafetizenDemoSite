@@ -154,3 +154,22 @@ body {
     opacity: 0.5;
   }
 }
+
+/* Improved touch targets for pagination dots */
+.pagination-dot-wrapper {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

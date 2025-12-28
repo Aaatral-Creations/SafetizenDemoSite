@@ -630,37 +630,37 @@ function LogoCarousel() {
   // Logo carousel with infinite scroll animation
   //https://codepen.io/studiojvla/pen/qVbQqW
   const logos = [
-    `${import.meta.env.BASE_URL}logos/lnt_construction.jpeg`,
-    `${import.meta.env.BASE_URL}logos/amnsindia.jpeg`,
-    `${import.meta.env.BASE_URL}logos/ashokleyland.jpeg`,
-    `${import.meta.env.BASE_URL}logos/toyoto.jpeg`,
-    `${import.meta.env.BASE_URL}logos/tatapower.jpeg`,
-    `${import.meta.env.BASE_URL}logos/tataprojects.jpeg`,
-    `${import.meta.env.BASE_URL}logos/ey.jpg`,
-    `${import.meta.env.BASE_URL}logos/jsw.jpeg`,
-    `${import.meta.env.BASE_URL}logos/iaf.jpeg`,
-    `${import.meta.env.BASE_URL}logos/indianarmy.jpeg`,
-    `${import.meta.env.BASE_URL}logos/indiannavy.jpeg`,
-    `${import.meta.env.BASE_URL}logos/toyotoboshoku.jpg`,
-    `${import.meta.env.BASE_URL}logos/coreehs.jpeg`,
-    `${import.meta.env.BASE_URL}logos/forcetech.jpeg`,
-    `${import.meta.env.BASE_URL}logos/hcc.png`,
-    `${import.meta.env.BASE_URL}logos/itt.jpeg`,
-    `${import.meta.env.BASE_URL}logos/jll.jpeg`,
-    `${import.meta.env.BASE_URL}logos/kitious.jpeg`,
-    `${import.meta.env.BASE_URL}logos/lnt-energy-hydrocarbon.jpg`,
-    `${import.meta.env.BASE_URL}logos/lnt.jpeg`,
-    `${import.meta.env.BASE_URL}logos/msp.jpeg`,
-    `${import.meta.env.BASE_URL}logos/renfraenergy.jpeg`,
-    `${import.meta.env.BASE_URL}logos/saildsp.jpeg`,
-    `${import.meta.env.BASE_URL}logos/saintgobain.jpeg`,
-    `${import.meta.env.BASE_URL}logos/tcs.jpg`,
-    `${import.meta.env.BASE_URL}logos/titan.jpeg`,
-    `${import.meta.env.BASE_URL}logos/acedesigners.jpeg`,
-    `${import.meta.env.BASE_URL}logos/allison.jpeg`,
-    `${import.meta.env.BASE_URL}logos/asp.jpg`,
-    `${import.meta.env.BASE_URL}logos/tpcodl.jpeg`,
-    `${import.meta.env.BASE_URL}logos/tpsodl.jpg`
+    { src: `${import.meta.env.BASE_URL}logos/lnt_construction.jpeg`, name: "L&T Construction" },
+    { src: `${import.meta.env.BASE_URL}logos/amnsindia.jpeg`, name: "AMNS India" },
+    { src: `${import.meta.env.BASE_URL}logos/ashokleyland.jpeg`, name: "Ashok Leyland" },
+    { src: `${import.meta.env.BASE_URL}logos/toyoto.jpeg`, name: "Toyota" },
+    { src: `${import.meta.env.BASE_URL}logos/tatapower.jpeg`, name: "Tata Power" },
+    { src: `${import.meta.env.BASE_URL}logos/tataprojects.jpeg`, name: "Tata Projects" },
+    { src: `${import.meta.env.BASE_URL}logos/ey.jpg`, name: "EY" },
+    { src: `${import.meta.env.BASE_URL}logos/jsw.jpeg`, name: "JSW" },
+    { src: `${import.meta.env.BASE_URL}logos/iaf.jpeg`, name: "Indian Air Force" },
+    { src: `${import.meta.env.BASE_URL}logos/indianarmy.jpeg`, name: "Indian Army" },
+    { src: `${import.meta.env.BASE_URL}logos/indiannavy.jpeg`, name: "Indian Navy" },
+    { src: `${import.meta.env.BASE_URL}logos/toyotoboshoku.jpg`, name: "Toyota Boshoku" },
+    { src: `${import.meta.env.BASE_URL}logos/coreehs.jpeg`, name: "Core EHS" },
+    { src: `${import.meta.env.BASE_URL}logos/forcetech.jpeg`, name: "Forcetech" },
+    { src: `${import.meta.env.BASE_URL}logos/hcc.png`, name: "HCC" },
+    { src: `${import.meta.env.BASE_URL}logos/itt.jpeg`, name: "ITT" },
+    { src: `${import.meta.env.BASE_URL}logos/jll.jpeg`, name: "JLL" },
+    { src: `${import.meta.env.BASE_URL}logos/kitious.jpeg`, name: "Kitious" },
+    { src: `${import.meta.env.BASE_URL}logos/lnt-energy-hydrocarbon.jpg`, name: "L&T Energy Hydrocarbon" },
+    { src: `${import.meta.env.BASE_URL}logos/lnt.jpeg`, name: "L&T" },
+    { src: `${import.meta.env.BASE_URL}logos/msp.jpeg`, name: "MSP" },
+    { src: `${import.meta.env.BASE_URL}logos/renfraenergy.jpeg`, name: "Renfra Energy" },
+    { src: `${import.meta.env.BASE_URL}logos/saildsp.jpeg`, name: "SAIL DSP" },
+    { src: `${import.meta.env.BASE_URL}logos/saintgobain.jpeg`, name: "Saint-Gobain" },
+    { src: `${import.meta.env.BASE_URL}logos/tcs.jpg`, name: "TCS" },
+    { src: `${import.meta.env.BASE_URL}logos/titan.jpeg`, name: "Titan" },
+    { src: `${import.meta.env.BASE_URL}logos/acedesigners.jpeg`, name: "Ace Designers" },
+    { src: `${import.meta.env.BASE_URL}logos/allison.jpeg`, name: "Allison" },
+    { src: `${import.meta.env.BASE_URL}logos/asp.jpg`, name: "ASP" },
+    { src: `${import.meta.env.BASE_URL}logos/tpcodl.jpeg`, name: "TP CODL" },
+    { src: `${import.meta.env.BASE_URL}logos/tpsodl.jpg`, name: "TP SODL" }
   ];
 
   return (
@@ -674,13 +674,13 @@ function LogoCarousel() {
         {/* First set of logos */}
         {logos.map((logo, idx) => (
           <div key={`logo-1-${idx}`} className="flex-shrink-0 w-64 px-4">
-            <img src={logo} alt={`Logo ${idx + 1}`} className="h-24 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src={logo.src} alt={`${logo.name} logo`} className="h-24 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
           </div>
         ))}
         {/* Duplicate set for infinite scroll */}
         {logos.map((logo, idx) => (
           <div key={`logo-2-${idx}`} className="flex-shrink-0 w-64 px-4">
-            <img src={logo} alt={`Logo ${idx + 1}`} className="h-24 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src={logo.src} alt={`${logo.name} logo`} className="h-24 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300" />
           </div>
         ))}
       </div>
@@ -1013,6 +1013,17 @@ export default function SafetizenLanding() {
     });
   }, [activeCategory, search, languageFilter, runtimeFilter]);
 
+  // Handle Escape key for modal
+  React.useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && selected) {
+        setSelected(null);
+      }
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [selected]);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100">
       {/* NAV */}
@@ -1037,33 +1048,32 @@ export default function SafetizenLanding() {
             <div className="text-sm text-slate-600 dark:text-slate-400">VR Safety Training Library</div>
           </div>
         </div>
-        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600">
+        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-300">
           <a href="#modules" className="hover:underline">Modules</a>
           <a href="#summary" className="hover:underline">Summary</a>
-          <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-3 py-1.5 bg-indigo-600 text-white rounded">Request Demo</a>
+          <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-3 py-1.5 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" aria-label="Request Demo (opens in new tab)">Request Demo</a>
         </nav>
         <button
-          className="md:hidden inline-flex flex-col justify-center items-center w-11 h-11 border border-slate-200 rounded-lg"
+          className="md:hidden inline-flex flex-col justify-center items-center w-11 h-11 border border-slate-200 dark:border-slate-700 rounded-lg"
           onClick={() => setMobileNavOpen((prev) => !prev)}
           aria-label="Toggle navigation"
+          aria-expanded={mobileNavOpen}
         >
-          <span className="w-5 h-0.5 bg-slate-800 mb-1" />
-          <span className="w-5 h-0.5 bg-slate-800 mb-1" />
-          <span className="w-5 h-0.5 bg-slate-800" />
+          <span className="w-5 h-0.5 bg-slate-800 dark:bg-slate-100 mb-1 transition-colors" />
+          <span className="w-5 h-0.5 bg-slate-800 dark:bg-slate-100 mb-1 transition-colors" />
+          <span className="w-5 h-0.5 bg-slate-800 dark:bg-slate-100 transition-colors" />
         </button>
       </header>
-      {mobileNavOpen && (
-        <div className="md:hidden px-6">
-          <div className="bg-white border border-slate-200 rounded-lg shadow-sm p-4 flex flex-col gap-2 text-sm text-slate-600">
-            <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-1">Modules</a>
-            <a href="#summary" onClick={() => setMobileNavOpen(false)} className="py-1">Summary</a>
-            <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-1">Explore Modules</a>
-            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center justify-center px-3 py-2 bg-indigo-600 text-white rounded">
-              Request Demo
-            </a>
-          </div>
+      <div className={`md:hidden px-6 transition-all duration-300 ease-in-out overflow-hidden ${mobileNavOpen ? 'max-h-96 opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
+        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm p-4 flex flex-col gap-2 text-sm text-slate-600 dark:text-slate-300">
+          <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Modules</a>
+          <a href="#summary" onClick={() => setMobileNavOpen(false)} className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Summary</a>
+          <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Explore Modules</a>
+          <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center justify-center px-3 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" aria-label="Request Demo (opens in new tab)">
+            Request Demo
+          </a>
         </div>
-      )}
+      </div>
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -1072,8 +1082,8 @@ export default function SafetizenLanding() {
           <p className="mt-4 text-slate-600 dark:text-slate-300">Ready-to-deploy, multilingual VR safety modules designed for Manufacturing, Infrastructure & Corporate environments — built for measurable competency.</p>
 
           <div className="mt-6 flex gap-3">
-            <a href="#modules" className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg">View Modules</a>
-            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 border rounded-lg">Request Demo</a>
+            <a href="#modules" className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">View Modules</a>
+            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Request Demo (opens in new tab)">Request Demo</a>
           </div>
 
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
@@ -1142,47 +1152,89 @@ export default function SafetizenLanding() {
           <h2 className="text-2xl font-semibold">VR Safety Module Library</h2>
 
           <div className="flex flex-col gap-3 w-full sm:flex-row sm:flex-wrap md:justify-end">
-            <input
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search modules..."
-              className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 placeholder-slate-400 dark:bg-slate-800 dark:text-slate-100 dark:placeholder-slate-500 w-full sm:w-48"
-            />
+            <div className="relative w-full sm:w-48">
+              <label htmlFor="module-search" className="sr-only">
+                Search safety training modules
+              </label>
+              <input
+                id="module-search"
+                type="search"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search modules..."
+                className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 placeholder-slate-400 dark:bg-slate-800 dark:text-slate-100 dark:placeholder-slate-500 w-full"
+                aria-label="Search safety training modules by name"
+              />
+            </div>
 
-            <select
-              value={languageFilter}
-              onChange={(e) => setLanguageFilter(e.target.value)}
-              className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100 w-full sm:w-auto"
-            >
-              {languages.map((l) => (
-                <option key={l} value={l}>{l}</option>
-              ))}
-            </select>
+            <div className="w-full sm:w-auto">
+              <label htmlFor="language-filter" className="sr-only">
+                Filter by language
+              </label>
+              <select
+                id="language-filter"
+                value={languageFilter}
+                onChange={(e) => setLanguageFilter(e.target.value)}
+                className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100 w-full"
+                aria-label="Filter modules by language"
+              >
+                {languages.map((l) => (
+                  <option key={l} value={l}>{l === "All" ? "All languages" : l}</option>
+                ))}
+              </select>
+            </div>
 
-            <select
-              value={runtimeFilter}
-              onChange={(e) => setRuntimeFilter(e.target.value)}
-              className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100 w-full sm:w-auto"
-            >
-              <option value="All">All runtimes</option>
-              <option value="<=10">≤ 10 mins</option>
-              <option value=">10">{"> 10 mins"}</option>
-            </select>
+            <div className="w-full sm:w-auto">
+              <label htmlFor="runtime-filter" className="sr-only">
+                Filter by runtime duration
+              </label>
+              <select
+                id="runtime-filter"
+                value={runtimeFilter}
+                onChange={(e) => setRuntimeFilter(e.target.value)}
+                className="px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100 w-full"
+                aria-label="Filter modules by runtime duration"
+              >
+                <option value="All">All runtimes</option>
+                <option value="<=10">≤ 10 mins</option>
+                <option value=">10">{"> 10 mins"}</option>
+              </select>
+            </div>
           </div>
         </div>
 
         <div className="mt-4">
-          <div className="flex flex-wrap gap-3 items-center">
+          {/* Mobile: Dropdown for categories */}
+          <div className="block sm:hidden">
+            <label htmlFor="category-filter-mobile" className="sr-only">
+              Filter by category
+            </label>
+            <select
+              id="category-filter-mobile"
+              value={activeCategory}
+              onChange={(e) => setActiveCategory(e.target.value)}
+              className="w-full px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-md bg-white text-slate-900 dark:bg-slate-800 dark:text-slate-100"
+              aria-label="Filter modules by category"
+            >
+              {CATEGORIES.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Desktop/Tablet: Buttons for categories */}
+          <div className="hidden sm:flex flex-wrap gap-3 items-center">
             {CATEGORIES.map((c) => {
               const isActive = activeCategory === c;
               return (
                 <button
                   key={c}
                   onClick={() => setActiveCategory(c)}
-                  className={`px-3 py-1 rounded border text-sm transition ${isActive
+                  className={`px-3 py-2 rounded border text-sm transition ${isActive
                     ? "bg-indigo-600 text-white border-indigo-500"
-                    : "bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-700"
+                    : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-700 dark:hover:bg-slate-700"
                     }`}
+                  aria-pressed={isActive}
                 >
                   {c}
                 </button>
@@ -1277,8 +1329,8 @@ export default function SafetizenLanding() {
           <h3 className="text-2xl font-semibold">Digitize Your Workplace Safety Training Today</h3>
           <p className="mt-2">Deploy VR training across your team and begin measurable assessments in days.</p>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-6 py-3 bg-white text-indigo-600 rounded font-semibold text-center">Book a Live VR Demo</a>
-            <a href="#modules" className="w-full sm:w-auto px-6 py-3 border rounded text-white/90 text-center">Explore Modules</a>
+            <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-6 py-3 bg-white text-indigo-600 rounded font-semibold text-center hover:bg-slate-50 transition" aria-label="Book a Live VR Demo (opens in new tab)">Book a Live VR Demo</a>
+            <a href="#modules" className="w-full sm:w-auto px-6 py-3 border border-white/30 rounded text-white hover:bg-white/10 text-center transition">Explore Modules</a>
           </div>
         </div>
       </section>
@@ -1293,34 +1345,35 @@ export default function SafetizenLanding() {
 
           <div>
             <div className="font-semibold">Contact</div>
-            <div className="text-sm text-slate-500 mt-2">Head Office</div>
-            <div className="text-sm text-slate-500">Padma Vilas, Door No. 3/233, Survey No. 34/1b</div>
-            <div className="text-sm text-slate-500">Manapakkam Main Road, Manapakkam</div>
-            <div className="text-sm text-slate-500">Chennai - 600125, Tamilnadu, India.</div>
-            <div className="text-sm text-slate-500 mt-3">Landline: 044-43589770</div>
-            <div className="text-sm text-slate-500">Mob: (+91)7338945666 / 9830714314 / 9600067005</div>
-            <div className="text-sm text-slate-500">US number: +1(669) 249-5831</div>
-            <div className="text-sm text-slate-500 mt-2">Mail: sales@aatral.io</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-2">Head Office</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Padma Vilas, Door No. 3/233, Survey No. 34/1b</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Manapakkam Main Road, Manapakkam</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Chennai - 600125, Tamilnadu, India.</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-3">Landline: 044-43589770</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">Mob: (+91)7338945666 / 9830714314 / 9600067005</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">US number: +1(669) 249-5831</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-2">Mail: <a href="mailto:sales@aatral.io" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">sales@aatral.io</a></div>
           </div>
 
           <div>
             <div className="font-semibold">Quick Links</div>
-            <ul className="mt-2 text-sm text-slate-500 space-y-1">
+            <ul className="mt-2 text-sm text-slate-600 dark:text-slate-400 space-y-1">
               <li>
-                <a href="#modules" className="hover:text-slate-800 transition">Modules</a>
+                <a href="#modules" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Modules</a>
               </li>
               <li>
                 <a
                   href="https://aatral.io/"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-slate-800 transition"
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+                  aria-label="About Aatral (opens in new tab)"
                 >
                   About
                 </a>
               </li>
               <li>
-                <a href="#roadmap" className="hover:text-slate-800 transition">Roadmap</a>
+                <a href="#roadmap" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Roadmap</a>
               </li>
             </ul>
           </div>
@@ -1337,29 +1390,49 @@ export default function SafetizenLanding() {
 
       {/* DETAILS MODAL */}
       {selected && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-white dark:bg-slate-800 p-6 rounded-lg max-w-lg w-full">
-            <h3 className="text-xl font-semibold mb-2">{selected.name}</h3>
-            <p className="text-sm mb-2">Category: {selected.category}</p>
-            <div className="mb-2 text-sm text-slate-600 dark:text-slate-300">
-              <div className="font-semibold text-slate-800 dark:text-slate-100">Description</div>
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+          onClick={() => setSelected(null)}
+        >
+          <div
+            className="bg-white dark:bg-slate-800 p-6 rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between mb-4">
+              <h3 id="modal-title" className="text-xl font-semibold flex-1">{selected.name}</h3>
+              <button
+                onClick={() => setSelected(null)}
+                className="ml-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition"
+                aria-label="Close dialog"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Category: {selected.category}</p>
+            <div className="mb-3 text-sm text-slate-600 dark:text-slate-300">
+              <div className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Description</div>
               <p>{selected.description}</p>
             </div>
             <div className="mb-4 text-sm text-slate-600 dark:text-slate-300">
-              <div className="font-semibold text-slate-800 dark:text-slate-100">Learning Objective</div>
+              <div className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Learning Objective</div>
               <p>{selected.learningObjective}</p>
             </div>
-            <p className="text-sm mb-2">Runtime: {selected.runtime}</p>
-            <p className="text-sm mb-2">Languages: {selected.languages.join(', ')}</p>
-            <p className="text-sm mb-2">Industries: {selected.industries.join(', ')}</p>
-            <p className="text-sm mb-4">Devices: {selected.devices.join(', ')}</p>
+            <p className="text-sm mb-2 text-slate-600 dark:text-slate-300">Runtime: {selected.runtime}</p>
+            <p className="text-sm mb-2 text-slate-600 dark:text-slate-300">Languages: {selected.languages.join(', ')}</p>
+            <p className="text-sm mb-2 text-slate-600 dark:text-slate-300">Industries: {selected.industries.join(', ')}</p>
+            <p className="text-sm mb-4 text-slate-600 dark:text-slate-300">Devices: {selected.devices.join(', ')}</p>
             <div className="flex gap-2 mt-4">
               {selected.video ? (
-                <a href={selected.video} target="_blank" rel="noreferrer" className="px-3 py-2 bg-indigo-600 text-white rounded">Watch Video</a>
+                <a href={selected.video} target="_blank" rel="noreferrer" className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" aria-label="Watch video (opens in new tab)">Watch Video</a>
               ) : null}
               <button
                 onClick={() => setSelected(null)}
-                className="px-4 py-2 rounded border border-slate-300 text-slate-700 bg-white hover:bg-slate-50 dark:border-white/30 dark:text-white dark:bg-transparent dark:hover:bg-white/10 transition"
+                className="px-4 py-2 rounded border border-slate-300 text-slate-700 bg-white hover:bg-slate-50 dark:border-slate-600 dark:text-white dark:bg-slate-700 dark:hover:bg-slate-600 transition"
               >
                 Close
               </button>
