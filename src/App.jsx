@@ -10,7 +10,7 @@ const MODULES = [
     name: "Office Safety – Corporate Office",
     category: "Office Safety",
     runtime: "13 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["General", "Corporate"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -23,7 +23,7 @@ const MODULES = [
     name: "Excavation Safety – Construction Excavation Training",
     category: "Excavation Safety",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -36,7 +36,7 @@ const MODULES = [
     name: "Excavation Safety – Power Line Excavation Training",
     category: "Excavation Safety",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -49,7 +49,7 @@ const MODULES = [
     name: "PPE Orientation – General V1",
     category: "PPE Orientation",
     runtime: "5 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["General", "Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -62,7 +62,7 @@ const MODULES = [
     name: "Hot Works – Welding",
     category: "Hot Works",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -75,7 +75,7 @@ const MODULES = [
     name: "Electrical Safety – LOTO",
     category: "Electrical Safety",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -88,7 +88,7 @@ const MODULES = [
     name: "Electrical Safety – Construction",
     category: "Electrical Safety",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -101,7 +101,7 @@ const MODULES = [
     name: "Work At Height – Roof Sheet Change",
     category: "Work At Height",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -114,7 +114,7 @@ const MODULES = [
     name: "Work At Height – Scaffolding Safety",
     category: "Work At Height",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -127,7 +127,7 @@ const MODULES = [
     name: "Fire Safety – General Extinguisher Training V2",
     category: "Fire Safety",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["General", "Corporate", "Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -140,7 +140,7 @@ const MODULES = [
     name: "Work At Height – Vertigo Test",
     category: "Work At Height",
     runtime: "5 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -153,7 +153,7 @@ const MODULES = [
     name: "Work At Height – Manlifter Safety",
     category: "Work At Height",
     runtime: "5 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -166,7 +166,7 @@ const MODULES = [
     name: "Fire Safety – Fire Evacuation Safety",
     category: "Fire Safety",
     runtime: "15 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["General", "Corporate"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -179,7 +179,7 @@ const MODULES = [
     name: "Chemical Safety – Hazardous Substances Handling",
     category: "Chemical Safety",
     runtime: "10 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing", "Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -192,7 +192,7 @@ const MODULES = [
     name: "Environmental Safety – Waste Segregation",
     category: "Environmental Safety",
     runtime: "5 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Infrastructure"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -205,7 +205,7 @@ const MODULES = [
     name: "CPR Training – Basic Life Support",
     category: "CPR Training",
     runtime: "5 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["General", "Corporate"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -218,7 +218,7 @@ const MODULES = [
     name: "Shop Floor Safety – Life Saving Rules",
     category: "Shop Floor Safety",
     runtime: "5 mins",
-    languages: ["English"],
+    languages: ["English", "Hindi"],
     modes: { guided: true, quiz: false, assessment: true },
     industries: ["Manufacturing"],
     devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -257,7 +257,7 @@ const MODULES = [
       name: "CPR Training",
       category: "General Safety", //basic liife support 17
       runtime: "5 mins",
-      languages: ["English"],
+      languages: ["English", "Hindi"],
       modes: { guided: true, quiz: false, assessment: false },
       industries: ["General", "Corporate"],
       devices: ["Meta Quest 3", "Meta Quest 3S"],
@@ -439,7 +439,8 @@ const MODULES = [
       name: "Excavation Safety – Power Version", ////4
       category: "Killer Risks",
       runtime: "10 mins",
-      languages: ["English"],
+      languages: ["English", "Hindi"],
+
       modes: { guided: true, quiz: true, assessment: false },
       industries: ["Infrastructure"],
       devices: ["Meta Quest 3S"],
@@ -892,7 +893,7 @@ function AwardsCarousel() {
         <h3 className="text-2xl font-bold text-slate-900 dark:text-white transition-opacity duration-300">
           {awards[currentIndex].title}
         </h3>
-        <p className="text-slate-600 dark:text-slate-300 mt-2 transition-opacity duration-300">
+        <p className="text-slate-700 dark:text-slate-300 mt-2 transition-opacity duration-300">
           {awards[currentIndex].subtitle}
         </p>
       </div>
@@ -1044,13 +1045,14 @@ export default function SafetizenLanding() {
             loading="lazy"
           />
           <div>
-            <div className="font-semibold text-lg">Safetizen</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">VR Safety Training Library</div>
+            <div className="font-bold text-xl text-slate-900 dark:text-white">Aatral</div>
+            <div className="text-xs text-slate-500 dark:text-slate-400">Safetizen™ XR Safety Training</div>
           </div>
         </div>
-        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-300">
+        <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700 dark:text-slate-300">
           <a href="#modules" className="hover:underline">Modules</a>
           <a href="#summary" className="hover:underline">Summary</a>
+          <a href="https://aatral.io/" target="_blank" rel="noreferrer" className="hover:underline" aria-label="About Aatral (opens in new tab)">About Aatral</a>
           <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="px-3 py-1.5 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" aria-label="Request Demo (opens in new tab)">Request Demo</a>
         </nav>
         <button
@@ -1065,10 +1067,10 @@ export default function SafetizenLanding() {
         </button>
       </header>
       <div className={`md:hidden px-6 transition-all duration-300 ease-in-out overflow-hidden ${mobileNavOpen ? 'max-h-96 opacity-100 mb-4' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm p-4 flex flex-col gap-2 text-sm text-slate-600 dark:text-slate-300">
+        <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm p-4 flex flex-col gap-2 text-sm text-slate-700 dark:text-slate-300">
           <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Modules</a>
           <a href="#summary" onClick={() => setMobileNavOpen(false)} className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Summary</a>
-          <a href="#modules" onClick={() => setMobileNavOpen(false)} className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition">Explore Modules</a>
+          <a href="https://aatral.io/" target="_blank" rel="noreferrer" className="py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition" aria-label="About Aatral (opens in new tab)">About Aatral</a>
           <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="mt-2 inline-flex items-center justify-center px-3 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" aria-label="Request Demo (opens in new tab)">
             Request Demo
           </a>
@@ -1090,16 +1092,21 @@ export default function SafetizenLanding() {
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
               <span className="bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-                Transform Safety Training
+                Aatral Safetizen™
               </span>
               <br />
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
-                With VR Immersion
+                XR Safety Training Platform
               </span>
             </h1>
 
+            {/* Product Tagline */}
+            <p className="mt-3 text-sm font-medium text-indigo-600 dark:text-indigo-400">
+              Part of Aatral's Enterprise XR Training Platform Suite
+            </p>
+
             {/* Value Proposition */}
-            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="mt-6 text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
               Deploy <strong className="text-slate-900 dark:text-white">21+ ready-to-use VR safety modules</strong> in days, not months.
               Reduce workplace incidents by up to 70% with immersive, measurable training.
             </p>
@@ -1112,7 +1119,7 @@ export default function SafetizenLanding() {
                 </svg>
                 <div>
                   <span className="font-semibold text-slate-900 dark:text-white">Deploy in 48 Hours</span>
-                  <span className="text-slate-600 dark:text-slate-300"> — No custom development needed</span>
+                  <span className="text-slate-700 dark:text-slate-300"> — No custom development needed</span>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -1121,7 +1128,7 @@ export default function SafetizenLanding() {
                 </svg>
                 <div>
                   <span className="font-semibold text-slate-900 dark:text-white">Measurable Results</span>
-                  <span className="text-slate-600 dark:text-slate-300"> — Track competency with built-in assessments</span>
+                  <span className="text-slate-700 dark:text-slate-300"> — Track competency with built-in assessments</span>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -1130,7 +1137,7 @@ export default function SafetizenLanding() {
                 </svg>
                 <div>
                   <span className="font-semibold text-slate-900 dark:text-white">Multilingual Support</span>
-                  <span className="text-slate-600 dark:text-slate-300"> — Train global teams effectively</span>
+                  <span className="text-slate-700 dark:text-slate-300"> — Train global teams effectively</span>
                 </div>
               </div>
             </div>
@@ -1164,7 +1171,7 @@ export default function SafetizenLanding() {
             </div>
 
             {/* Social Proof / Urgency */}
-            <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+            <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-slate-700 dark:text-slate-400">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-600 border-2 border-white dark:border-slate-900"></div>
@@ -1202,7 +1209,7 @@ export default function SafetizenLanding() {
                 />
               </div>
               <div className="mt-4 text-center">
-                <p className="text-sm text-slate-600 dark:text-slate-300 font-medium">
+                <p className="text-sm text-slate-700 dark:text-slate-300 font-medium">
                   🎥 Watch: How enterprises reduce workplace incidents by 70%
                 </p>
               </div>
@@ -1218,7 +1225,7 @@ export default function SafetizenLanding() {
                   <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 leading-tight">
                     {stat.value}
                   </div>
-                  <div className="text-xs text-slate-600 dark:text-slate-300 mt-1 leading-tight">
+                  <div className="text-xs text-slate-700 dark:text-slate-300 mt-1 leading-tight">
                     {stat.label}
                   </div>
                 </div>
@@ -1231,8 +1238,8 @@ export default function SafetizenLanding() {
       {/* SUMMARY */}
       <section id="summary" className="max-w-7xl mx-auto px-6 py-6">
         <div className="bg-white dark:bg-slate-900 rounded-lg p-6 border border-slate-200 dark:border-slate-800 shadow">
-          <h2 className="text-2xl font-semibold">Executive Summary</h2>
-          <p className="mt-3 text-slate-600 dark:text-slate-300">Aatral Safetizen is a mature VR Safety Training Library providing 21+ modules across General Safety, Killer Risk Safety and a flagship EOT Crane Simulator. Modules are short (5–20 mins), available in multiple languages, and built with Guided, Quiz and Assessment learning modes for measurable competence.</p>
+          <h2 className="text-2xl font-semibold">About Aatral Safetizen™</h2>
+          <p className="mt-3 text-slate-700 dark:text-slate-300">Aatral Safetizen™ is an enterprise XR safety training platform providing 21+ modules across General Safety, Killer Risk Safety and a flagship EOT Crane Simulator. Part of Aatral's comprehensive enterprise XR training suite, Safetizen™ modules are short (5–20 mins), available in multiple languages, and built with Guided, Quiz and Assessment learning modes for measurable competence.</p>
 
           <div className="mt-4 grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="p-4 bg-slate-50 dark:bg-slate-800 rounded">
@@ -1369,7 +1376,7 @@ export default function SafetizenLanding() {
         <section id="eot-crane" className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-semibold">EOT Crane Simulators</h2>
-            <p className="text-sm text-slate-600 dark:text-slate-300 max-w-3xl">
+            <p className="text-sm text-slate-700 dark:text-slate-300 max-w-3xl">
               Dedicated cabin and pendant crane modules that replicate slab, billet, coin, and hot metal handling environments for steel plants and heavy manufacturing.
             </p>
           </div>
@@ -1384,19 +1391,19 @@ export default function SafetizenLanding() {
 
       {/* DIFFERENTIATORS */}
       <section className="max-w-7xl mx-auto px-6 py-8">
-        <h2 className="text-2xl font-semibold">Why Enterprises Choose Safetizen</h2>
+        <h2 className="text-2xl font-semibold">Why Enterprises Choose Aatral Safetizen™</h2>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold text-slate-900 dark:text-white">Real-world Risk Replication</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">High fidelity scenarios mapped to Life Saving Rules and industry risk.</p>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">High fidelity scenarios mapped to Life Saving Rules and industry risk.</p>
           </div>
           <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold text-slate-900 dark:text-white">Assessment & Benchmarking</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Guided, quiz and assessment modes provide measurable competency scores.</p>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">Guided, quiz and assessment modes provide measurable competency scores.</p>
           </div>
           <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold text-slate-900 dark:text-white">Hardware Integration</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Seamless hardware integrations for advanced simulators and peripherals.</p>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">Seamless hardware integrations for advanced simulators and peripherals.</p>
           </div>
         </div>
       </section>
@@ -1407,15 +1414,15 @@ export default function SafetizenLanding() {
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold text-slate-900 dark:text-white">Chemical Safety</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">December 2025</p>
           </div>
           <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold text-slate-900 dark:text-white">Material Handling</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">December 2025</p>
           </div>
           <div className="p-4 bg-white dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold text-slate-900 dark:text-white">Shop Floor Safety</h3>
-            <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">December 2025</p>
+            <p className="text-sm text-slate-700 dark:text-slate-300 mt-2">December 2025</p>
           </div>
         </div>
       </section>
@@ -1435,8 +1442,8 @@ export default function SafetizenLanding() {
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 py-8 text-center">
         <div className="bg-indigo-600 text-white rounded-lg p-10 shadow-lg">
-          <h3 className="text-2xl font-semibold">Digitize Your Workplace Safety Training Today</h3>
-          <p className="mt-2">Deploy VR training across your team and begin measurable assessments in days.</p>
+          <h3 className="text-2xl font-semibold">Transform Your Workplace Safety Training with Aatral</h3>
+          <p className="mt-2">Deploy Safetizen™ VR training across your team and begin measurable assessments in days.</p>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-6 py-3 bg-white text-indigo-600 rounded font-semibold text-center hover:bg-slate-50 transition" aria-label="Book a Live VR Demo (opens in new tab)">Book a Live VR Demo</a>
             <a href="#modules" className="w-full sm:w-auto px-6 py-3 border border-white/30 rounded text-white hover:bg-white/10 text-center transition">Explore Modules</a>
@@ -1448,8 +1455,27 @@ export default function SafetizenLanding() {
       <footer id="contact" className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
-            <div className="font-semibold">Aatral Safetizen</div>
-            <div className="text-sm text-slate-500 mt-2">Immersive VR safety training modules for enterprise.</div>
+            <a href="https://aatral.io/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 hover:opacity-80 transition" aria-label="Visit Aatral website (opens in new tab)">
+              {/* Light mode logo */}
+              <img
+                src={`${import.meta.env.BASE_URL}aatral-logo.png`}
+                alt="Aatral logo"
+                className="w-32 h-12 object-contain dark:hidden"
+                loading="lazy"
+              />
+              {/* Dark mode logo */}
+              <img
+                src={`${import.meta.env.BASE_URL}aatral-dark.png`}
+                alt="Aatral logo"
+                className="w-32 h-12 object-contain hidden dark:block"
+                loading="lazy"
+              />
+              <div>
+                <div className="font-bold text-lg text-slate-900 dark:text-white">Aatral</div>
+                <div className="text-sm text-slate-700 dark:text-slate-400 mt-1">Safetizen™ XR Safety Training Platform</div>
+              </div>
+            </a>
+            <div className="text-sm text-slate-700 dark:text-slate-400 mt-3">Enterprise XR training solutions for immersive learning experiences.</div>
           </div>
 
           <div>
@@ -1522,19 +1548,29 @@ export default function SafetizenLanding() {
                 </svg>
               </button>
             </div>
-            <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Category: {selected.category}</p>
-            <div className="mb-3 text-sm text-slate-600 dark:text-slate-300">
+            <p className="mb-3 text-sm text-slate-700 dark:text-slate-300">
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Category:</span> {selected.category}
+            </p>
+            <div className="mb-3 text-sm text-slate-700 dark:text-slate-300">
               <div className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Description</div>
               <p>{selected.description}</p>
             </div>
-            <div className="mb-4 text-sm text-slate-600 dark:text-slate-300">
+            <div className="mb-4 text-sm text-slate-700 dark:text-slate-300">
               <div className="font-semibold text-slate-800 dark:text-slate-100 mb-1">Learning Objective</div>
               <p>{selected.learningObjective}</p>
             </div>
-            <p className="text-sm mb-2 text-slate-600 dark:text-slate-300">Runtime: {selected.runtime}</p>
-            <p className="text-sm mb-2 text-slate-600 dark:text-slate-300">Languages: {selected.languages.join(', ')}</p>
-            <p className="text-sm mb-2 text-slate-600 dark:text-slate-300">Industries: {selected.industries.join(', ')}</p>
-            <p className="text-sm mb-4 text-slate-600 dark:text-slate-300">Devices: {selected.devices.join(', ')}</p>
+            <p className="mb-2 text-sm text-slate-700 dark:text-slate-300">
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Runtime:</span> {selected.runtime}
+            </p>
+            <p className="mb-2 text-sm text-slate-700 dark:text-slate-300">
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Languages:</span> {selected.languages.join(', ')}
+            </p>
+            <p className="mb-2 text-sm text-slate-700 dark:text-slate-300">
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Industries:</span> {selected.industries.join(', ')}
+            </p>
+            <p className="mb-4 text-sm text-slate-700 dark:text-slate-300">
+              <span className="font-semibold text-slate-800 dark:text-slate-100">Devices:</span> {selected.devices.join(', ')}
+            </p>
             <div className="flex gap-2 mt-4">
               {selected.video ? (
                 <a href={selected.video} target="_blank" rel="noreferrer" className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition" aria-label="Watch video (opens in new tab)">Watch Video</a>
