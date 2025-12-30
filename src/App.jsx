@@ -675,7 +675,7 @@ function LogoCarousel() {
     { src: `${import.meta.env.BASE_URL}logos/ashokleyland.jpeg`, name: "Ashok Leyland" },
     { src: `${import.meta.env.BASE_URL}logos/toyoto.jpeg`, name: "Toyota" },
     { src: `${import.meta.env.BASE_URL}logos/tatapower.jpeg`, name: "Tata Power" },
-    { src: `${import.meta.env.BASE_URL}logos/Jindalsteel.png`, name: "Jindal Steel" },
+    { src: `${import.meta.env.BASE_URL}logos/Jindalsteel.jpeg`, name: "Jindal Steel" },
     { src: `${import.meta.env.BASE_URL}logos/tataprojects.jpeg`, name: "Tata Projects" },
     { src: `${import.meta.env.BASE_URL}logos/ey.jpg`, name: "EY" },
     { src: `${import.meta.env.BASE_URL}logos/jsw.jpeg`, name: "JSW" },
