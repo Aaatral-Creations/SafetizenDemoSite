@@ -1564,7 +1564,7 @@ export default function SafetizenLanding() {
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 py-8 text-center">
         <div className="bg-indigo-600 text-white rounded-lg p-10 shadow-lg">
-          <h3 className="text-2xl font-semibold">Transform Your Workplace Safety Training with Aatral</h3>
+          <h2 className="text-2xl font-semibold">Transform Your Workplace Safety Training with Aatral</h2>
           <p className="mt-2">Deploy Safetizen™ VR training across your team and begin measurable assessments in days.</p>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <a href="https://aatral.io/contact-us" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-6 py-3 bg-white text-indigo-600 rounded font-semibold text-center hover:bg-slate-50 transition" aria-label="Book a Live VR Demo (opens in new tab)">Book a Live VR Demo</a>

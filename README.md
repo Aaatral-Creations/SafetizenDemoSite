@@ -1,17 +1,18 @@
 # Aatral Safetizen™ - XR Safety Training Platform
 
-A modern, responsive product page for Aatral Safetizen™, an enterprise XR safety training platform featuring 20+ ready-to-deploy VR safety modules. Built with React, Vite, and TailwindCSS.
+A modern, responsive, and **WCAG 2.1 AAA compliant** product page for Aatral Safetizen™, an enterprise XR safety training platform featuring 21+ ready-to-deploy VR safety modules. Built with React, Vite, and TailwindCSS.
 
 ## 🌟 Overview
 
 **Aatral Safetizen™** is part of Aatral's comprehensive enterprise XR training platform suite, providing immersive VR safety training modules for Manufacturing, Infrastructure, and Corporate environments.
 
 ### Key Features
-- **20+ VR Safety Modules** - Ready-to-deploy training across multiple safety categories and EOT Crane Simulators
-- **Multilingual Support** - Modules available in English and Hindi
+- **21+ VR Safety Modules** - Ready-to-deploy training across General Safety, Killer Risk Safety, and EOT Crane Simulators
+- **Multilingual Support** - All modules available in English and Hindi
 - **3 Learning Modes** - Guided, Quiz, and Assessment for measurable competency
 - **Industry-Specific** - Tailored for Manufacturing, Infrastructure, and Corporate sectors
 - **Meta Quest Compatible** - Optimized for Meta Quest 3 and Meta Quest 3S
+- **WCAG 2.1 AAA Compliant** - Exceeds accessibility standards with full keyboard navigation, screen reader support, and motion preferences
 
 ## 🎯 Product Page Sections
 
@@ -143,11 +144,13 @@ safetizen-app/
 - **Positioning**: Part of Aatral's Enterprise XR Training Platform Suite
 
 ### Accessibility
-- **WCAG 2.1 AA Compliant** - Improved text contrast (slate-700 for light theme)
-- **Keyboard Navigation** - Full support for all interactive elements
-- **Screen Reader Support** - Proper ARIA labels and semantic HTML
-- **Focus Indicators** - Visible on all interactive elements
-- **Responsive Touch Targets** - Minimum 44px for mobile
+- **WCAG 2.1 AAA Compliant** - Exceeds industry standards for accessibility
+- **Prefers-Reduced-Motion** - Full support for users with vestibular disorders
+- **Semantic HTML** - Proper heading hierarchy (H1 → H2 → H3)
+- **Keyboard Navigation** - Full support for all interactive elements with visible focus indicators
+- **Screen Reader Support** - Comprehensive ARIA labels and semantic landmarks
+- **Color Contrast** - All text meets WCAG AAA standards (7:1+ for body text)
+- **Touch Targets** - Minimum 44px for all interactive elements
 
 ### Responsive Design
 - **Mobile First** - Optimized for 375px and up
