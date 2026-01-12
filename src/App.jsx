@@ -1670,6 +1670,27 @@ export default function SafetizenLanding() {
             </p>
           </div>
 
+          {/* Video Preview */}
+          <div className="mb-12">
+            <div className="max-w-4xl mx-auto">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 dark:border-slate-700/50">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/k8T8WQNffac"
+                    title="DAXR Platform Preview"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              <p className="text-center text-sm text-slate-600 dark:text-slate-400 mt-4">
+                Watch how DAXR streamlines enterprise XR training management
+              </p>
+            </div>
+          </div>
+
           {/* Feature Pillars */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {/* Feature 1: User & Device Management */}
